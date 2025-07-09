@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부민병원 인도네시아 진출 전략 PPT 인포그래픽</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f0f4f8;
+            line-height: 1.6;
+        }
+        .section-container {
+            background-color: #ffffff;
+            border-radius: 1.5rem; /* rounded-2xl */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+            padding: 2rem; /* p-8 */
+            margin-bottom: 4rem; /* mb-16 */
+        }
+        .text-blue-dark { color: #00449E; }
+        .text-blue-primary { color: #005CB9; }
+        .text-blue-medium { color: #0077D8; }
+        .text-blue-light { color: #4D9DE0; }
+        .bg-blue-dark { background-color: #00449E; }
+        .bg-blue-primary { background-color: #005CB9; }
+        .bg-blue-medium { background-color: #0077D8; }
+        .bg-blue-light { background-color: #4D9DE0; }
+        .bg-blue-lighter { background-color: #8AD2F2; }
+        .border-blue-dark { border-color: #00449E; }
+        .text-red-500 { color: #EF4444; }
+
+        .chart-canvas-container {
+            position: relative;
+            height: 300px; /* Fixed height for consistency in PPT-like view */
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Table specific styles for the infographic */
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            font-size: 0.9rem; /* Slightly smaller font for table content */
+        }
+        .info-table th, .info-table td {
+            padding: 0.5rem;
+            border: 1px solid #e2e8f0; /* gray-200 */
+            text-align: left;
+        }
+        .info-table th {
+            background-color: #e0f2fe; /* blue-100 */
+            font-weight: bold;
+            color: #00449E;
+        }
+        .info-table tr:nth-child(even) {
+            background-color: #f8fafc; /* gray-50 */
+        }
+
+        .roadmap-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+        }
+        .roadmap-item:last-child {
+            margin-bottom: 0;
+        }
+        .roadmap-icon {
+            flex-shrink: 0;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 9999px; /* rounded-full */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #ffffff;
+            margin-right: 1.5rem;
+            font-size: 1.25rem;
+        }
+        .roadmap-content {
+            flex-grow: 1;
+        }
+        .roadmap-line {
+            position: absolute;
+            left: 2.5rem; /* Half of roadmap-icon width */
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #d1d5db; /* gray-300 */
+            z-index: -1;
+        }
+        .roadmap-container {
+            position: relative;
+            padding-left: 3rem; /* Space for line and icons */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+        
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-black text-blue-dark mb-2">부민병원 인도네시아 진출: <br>심층 분석 및 로드맵</h1>
+            <p class="text-xl text-blue-primary font-bold">Deep research for <span class="text-red-500 font-bold">HSS</span></p>
+        </header>
+
+        <main>
+            <!-- 1. 시장 기회 심층 분석 -->
+            <section class="section-container">
+                <h2 class="text-3xl font-bold text-center text-blue-dark mb-8">1. 인도네시아 시장: 거대한 기회와 성장 잠재력</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="text-center">
+                        <!-- 무릎관절 수술 관련 실제 사진으로 변경 -->
+                        <img src="https://seckinbasilgan.com/wp-content/uploads/2024/08/diz-protezi-tedavisi.jpg" alt="무릎관절 수술 X-ray 이미지" class="mx-auto mb-4 rounded-xl w-48 h-48 object-contain">
+                        <p class="text-lg text-gray-700 mb-4">인도네시아 관절 질환 유병률은 7.3%로, 이는 <span class="text-red-500">약 1,950만 명</span>의 환자를 의미합니다.</p>
+                        <div class="bg-blue-dark text-white rounded-xl p-6 inline-block">
+                            <div class="text-5xl font-black">1,950만+</div>
+                            <div class="text-xl font-bold mt-2">관절 질환 환자 수 (2018년 기준)</div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-lg text-gray-700 mb-4 text-center">정형외과 의료기기 시장은 2025년 <span class="text-red-500">$2.16억</span>에서 2030년 <span class="text-red-500">$3.6억</span>으로 성장할 전망입니다.</p>
+                        <div class="chart-canvas-container">
+                            <canvas id="orthopedicMarketChart"></canvas>
+                        </div>
+                        <p class="text-center text-sm text-gray-500 mt-4">관절 재건 임플란트, 척추 기기, 외상 고정 기기, 관절경 기기 등 포함</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. 현지 병원 현황 분석: 기술 및 비용 비교 -->
+            <section class="section-container">
+                <h2 class="text-3xl font-bold text-center text-blue-dark mb-8">2. 현지 병원 현황:<br>기술 수준과 비용 구조</h2>
+                <p class="text-center text-lg text-gray-700 max-w-3xl mx-auto mb-12">인도네시아 병원들은 기술 수준과 비용 면에서 큰 차이를 보입니다.<br>부민병원은 첨단 기술과 효율적인 비용 구조로 경쟁 우위를 확보할 수 있습니다.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center">
+                        <h3 class="text-2xl font-bold text-blue-primary mb-4">공공 병원</h3>
+                        <p class="text-gray-600 mb-4">낮은 비용 (BPJS 지원), 긴 입원 기간, <span class="font-bold text-red-500">주로 재래식 수술</span></p>
+                        <div class="overflow-x-auto w-full">
+                            <table class="info-table">
+                                <thead>
+                                    <tr>
+                                        <th>병원 이름</th>
+                                        <th>수술 종류</th>
+                                        <th>예상 비용 (IDR)</th>
+                                        <th>입원 기간</th>
+                                        <th>기술</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="font-semibold">RSUPN Dr. Cipto Mangunkusumo (RSCM)</td>
+                                        <td>Total Knee Replacement (TKR)</td>
+                                        <td>45 – 70백만 (BPJS 지원)</td>
+                                        <td>3 – 5일</td>
+                                        <td>재래식</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-semibold">Prof. Dr. R. Soeharso Orthopedic Hospital</td>
+                                        <td>TKR, 부분 무릎 교체</td>
+                                        <td>35 – 65백만</td>
+                                        <td>3 – 4일</td>
+                                        <td>재래식 + 제한적 내비게이션</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-semibold">Hasan Sadikin Hospital (RSHS)</td>
+                                        <td>TKR, Hip Replacement</td>
+                                        <td>45 – 70백만</td>
+                                        <td>3 – 5일</td>
+                                        <td>재래식</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center">
+                        <h3 class="text-2xl font-bold text-blue-primary mb-4">사립/대학 병원</h3>
+                        <p class="text-gray-600 mb-4">높은 비용, 짧은 입원 기간<br><span class="font-bold text-red-500">로봇/MIS 등 첨단 기술 도입 중</span></p>
+                        <div class="overflow-x-auto w-full">
+                            <table class="info-table">
+                                <thead>
+                                    <tr>
+                                        <th>병원 이름</th>
+                                        <th>수술 종류</th>
+                                        <th>예상 비용 (IDR)</th>
+                                        <th>입원 기간</th>
+                                        <th>기술</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="font-semibold">RS Premier Jatinegara</td>
+                                        <td>TKR, Arthroscopy</td>
+                                        <td>85 – 150백만</td>
+                                        <td>2 – 3일</td>
+                                        <td>로봇 보조 (ROSA)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-semibold">RS Pondok Indah (RSPI)</td>
+                                        <td>TKR, Arthroscopy</td>
+                                        <td>120 – 160백만</td>
+                                        <td>2 – 3일</td>
+                                        <td>CAS, 로봇 보조 (Skyra)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-semibold">Siloam Hospitals (Group)</td>
+                                        <td>TKR, Hip Replacement, Arthroscopy</td>
+                                        <td>90 – 140백만</td>
+                                        <td>2 – 4일</td>
+                                        <td>MIS, 내비게이션 시스템</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-semibold">RS Santo Borromeus</td>
+                                        <td>TKR, Arthroscopy</td>
+                                        <td>100 – 150백만 (147백만)</td>
+                                        <td>2 – 3일</td>
+                                        <td>로봇 보조 (ROSA)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-semibold">RS Mandaya Royal Puri</td>
+                                        <td>TKR, Arthroscopy</td>
+                                        <td>130 – 150백만</td>
+                                        <td>2 – 3일</td>
+                                        <td>로봇 보조 (CORI)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-semibold">Eka Hospital</td>
+                                        <td>TKR, Arthroscopy</td>
+                                        <td>100 – 150백만 (100백만)</td>
+                                        <td>2 – 3일</td>
+                                        <td>로봇 보조 (VELYS)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-semibold">RS Universitas Indonesia (RSUI)</td>
+                                        <td>TKR, Joint Revision</td>
+                                        <td>50 – 80백만</td>
+                                        <td>3 – 4일</td>
+                                        <td>재래식 + 연구 연계 프로토콜</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center text-sm text-gray-500 mt-8">참고: RSCM, RSHS, Soeharso 정형외과 병원은 정형외과 관련 수술 건수가 많습니다.</p>
+            </section>
+
+            <!-- 3. KEK 시스템의 전략적 우위 (표 1 시각화) -->
+            <section class="section-container">
+                <h2 class="text-3xl font-bold text-center text-blue-dark mb-8">3. KEK 시스템: 규제 우회 및 비즈니스 가속화</h2>
+                <p class="text-center text-lg text-gray-700 max-w-4xl mx-auto mb-12">인도네시아 KEK(경제특구)는 복잡한 규제를 우회하고 투자에 유리한 환경을 제공하여, 부민병원의 성공적인 시장 진입을 위한 핵심 동력이 됩니다.</p>
+                
+                <div class="overflow-x-auto w-full">
+                    <table class="info-table">
+                        <thead>
+                            <tr>
+                                <th>구분</th>
+                                <th>국가 전체 시스템 (비-KEK)</th>
+                                <th>KEK 시스템 (부민병원 전략)</th>
+                                <th>핵심 성과</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">외국인 의사 면허</td>
+                                <td>최대 4년 근무 제한, 행정/실기 평가 필수</td>
+                                <td>근무 기간 제한 면제, 포트폴리오 평가 가능<br><span class="font-bold text-red-500">(장기 순환 근무 및 교육 가능)</span></td>
+                                <td>의료진 수급 및 전문성 확보 용이</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">해외 의료기기/의약품 승인</td>
+                                <td>엄격하고 장기적인 BPOM 등록 절차</td>
+                                <td>해외 승인 시 KEK 내 사용 가능<br><span class="font-bold text-red-500">(최첨단 장비 지연 없이 도입)</span></td>
+                                <td>최신 의료 기술 도입 가속화</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">법인세</td>
+                                <td>표준 법인세율 적용</td>
+                                <td>투자 규모에 따라 10~20년 면제 (Tax Holiday)<br><span class="font-bold text-red-500">(초기 수익성 극대화)</span></td>
+                                <td>재정적 부담 경감 및 투자 유인</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">수입관세/부가가치세</td>
+                                <td>수입 장비 및 소모품에 부과</td>
+                                <td>면제<br><span class="font-bold text-red-500">(운영 비용 절감)</span></td>
+                                <td>가격 경쟁력 확보 및 수익성 개선</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">행정 인허가</td>
+                                <td>복잡하고 분산된 관료주의, 장시간 소요</td>
+                                <td>KEK 관리자를 통한 원스톱 서비스<br><span class="font-bold text-red-500">(신속 처리, 불확실성 제거)</span></td>
+                                <td>사업 준비 기간 단축 및 비즈니스 외적 불확실성 제거</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 4. 단계별 실행 로드맵 (표 2 시각화) -->
+            <section class="section-container">
+                <h2 class="text-3xl font-bold text-center text-blue-dark mb-8">4. 실행 로드맵: 단계별 성장 전략 (향후 5년)</h2>
+                <p class="text-center text-lg text-gray-700 max-w-4xl mx-auto mb-12">준비기부터 네트워크 확장까지, 부민병원의 체계적인 성장 로드맵은 인도네시아 시장에서의 지속 가능한 성공을 보장합니다.</p>
+                
+                <div class="roadmap-container relative">
+                    <div class="roadmap-line"></div>
+                    <div class="roadmap-item">
+                        <div class="roadmap-icon bg-blue-dark">0</div>
+                        <div class="roadmap-content">
+                            <h3 class="text-xl font-bold text-blue-primary mb-1">0단계 (준비기, 0년차): 6-12개월</h3>
+                            <ul class="list-disc list-inside text-gray-700">
+                                <li>현지 파트너 선정 및 계약</li>
+                                <li>KEK 및 자카르타 부지/시설 확보</li>
+                                <li>법인 설립 및 법률 검토</li>
+                                <li>시설 설계 및 첨단 장비 선정 (수술로봇 등)</li>
+                            </ul>
+                            <p class="text-sm text-gray-500 mt-2"><strong>KPIs:</strong> 파트너십 계약 체결, KEK 관리자 투자 계획 승인, 자카르타 센터 협업 계약 체결</p>
+                        </div>
+                    </div>
+                    <div class="roadmap-item">
+                        <div class="roadmap-icon bg-blue-medium">1</div>
+                        <div class="roadmap-content">
+                            <h3 class="text-xl font-bold text-blue-primary mb-1">1단계 (동시 출범, 1-2년차): 24개월</h3>
+                            <ul class="list-disc list-inside text-gray-700">
+                                <li>KEK 수술 허브 및 자카르타 위성 센터 동시 공사</li>
+                                <li>핵심 의료진 및 행정 인력 채용 (다분야)</li>
+                                <li>KEK/자카르타 운영 인허가 동시 획득</li>
+                                <li>'정형외과 분야 수술 허브', '트레이닝 허브', '자카르타 센터' 공식 출범</li>
+                            </ul>
+                            <p class="text-sm text-gray-500 mt-2"><strong>KPIs:</strong> 1차년도 수술 300건 달성, 자카르타 센터에서 월 20건 이상 의뢰, 인도네시아 의사 15명 교육 수료, 전체 사업 손익분기점(BEP) 달성</p>
+                        </div>
+                    </div>
+                    <div class="roadmap-item">
+                        <div class="roadmap-icon bg-blue-light">2</div>
+                        <div class="roadmap-content">
+                            <h3 class="text-xl font-bold text-blue-primary mb-1">2단계 (네트워크 확장 및 진료 범위 확장, 3-5년차): 24-36개월</h3>
+                            <ul class="list-disc list-inside text-gray-700">
+                                <li>첨단 장비 (복강경 수술로봇 등) 추가 도입 및 진료과목/수술 종류 확대</li>
+                                <li>2~15호 위성 센터 출범 (수라바야 등 지방 대도시로 확장)</li>
+                                <li>트레이닝 허브 교육과정 공식화 및 확대</li>
+                                <li>독립병원 설립 타당성 조사 착수</li>
+                            </ul>
+                            <p class="text-sm text-gray-500 mt-2"><strong>KPIs:</strong> 위성 네트워크에서 수술 허브로 월 100건 이상 의뢰, 전체 위성 센터 자체 수익 연 20% 성장, 트레이닝 프로그램 정부/학회 인증 획득</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. 이해관계자 가치 제안 매트릭스 (표 3 시각화) -->
+            <section class="section-container">
+                <h2 class="text-3xl font-bold text-center text-blue-dark mb-8">5. Win-Win-Win-Win: 이해관계자별 가치 제안</h2>
+                <p class="text-center text-lg text-gray-700 max-w-4xl mx-auto mb-12">부민병원의 인도네시아 진출은 모든 핵심 이해관계자에게 명확하고 강력한 가치를 제공하며, 상호 이익을 창출하는 지속 가능한 생태계를 구축합니다.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="p-6 bg-blue-lighter rounded-xl shadow-md">
+                        <h3 class="text-xl font-bold text-blue-dark mb-4">부민병원</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1">
+                            <li>고수익 신규 해외 매출원 확보</li>
+                            <li>주요 성장 시장으로의 리스크 최소화 진입</li>
+                            <li>아세안(ASEAN) 지역의 토탈 첨단 수술 병원으로서 국제적 위상 강화</li>
+                            <li>장기적인 지역 성장 플랫폼 구축</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-blue-lighter rounded-xl shadow-md">
+                        <h3 class="text-xl font-bold text-blue-dark mb-4">인도네시아 파트너 병원</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1">
+                            <li>투자 위험 없이 세계적 수준의 다분야 첨단 수술 서비스 라인 확보</li>
+                            <li>기존에 유치하지 못했던 고소득 신규 환자층 유입</li>
+                            <li>공동 브랜딩을 통한 자사 브랜드 위상 강화 및 압도적 경쟁력 확보</li>
+                            <li>해외 병원으로의 환자 유출 방어 및 경쟁력 제고</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-blue-lighter rounded-xl shadow-md">
+                        <h3 class="text-xl font-bold text-blue-dark mb-4">인도네시아 정부 및 보건부</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1">
+                            <li>해외 의료관광 지출의 국내 전환을 통한 외화 유출 방지</li>
+                            <li>척추·관절, 로봇수술 등 다분야에 걸친 가시적인 선진 의료 기술 이전 효과</li>
+                            <li>현지 의료 인력의 역량 강화 및 다분야 전문의 양성 가속화</li>
+                            <li>KEK 의료 특구 전략의 성공적인 선례(Proof of Concept) 확보</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-blue-lighter rounded-xl shadow-md">
+                        <h3 class="text-xl font-bold text-blue-dark mb-4">인도네시아 환자 및 의사</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1">
+                            <li>해외로 나가지 않고도 다양한 질환에 대한 세계적 수준의 첨단 수술 접근성 향상</li>
+                            <li>해외 원정진료에 따르는 비용 및 시간, 불편함 해소</li>
+                            <li>주니어 전문의들을 위한 양질의 다분야 실습 중심(Hands-on) 수련 기회 확대</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="text-center mt-16 pt-8 border-t-2 border-blue-dark">
+            <p class="text-2xl font-black text-blue-dark">부민병원의 인도네시아 진출은 단순한 투자를 넘어선 <br>미래 의료 시장의 혁신을 이끌 전략적 선택입니다.</p>
+            <p class="text-lg text-gray-600 mt-2">이 제안이 귀사의 성공적인 의사결정에 도움이 되기를 바랍니다.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        const brilliantBlues = ['#00449E', '#005CB9', '#0077D8', '#4D9DE0', '#8AD2F2'];
+
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            }
+            return label;
+        };
+
+        const wrapLabel = (label, maxLength = 16) => {
+            if (label.length <= maxLength) {
+                return label;
+            }
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            for (const word of words) {
+                if ((currentLine + ' ' + word).trim().length > maxLength) {
+                    lines.push(currentLine.trim());
+                    currentLine = word;
+                } else {
+                    currentLine = (currentLine + ' ' + word).trim();
+                }
+            }
+            if (currentLine) {
+                lines.push(currentLine.trim());
+            }
+            return lines;
+        };
+        
+        const defaultChartOptions = {
+            maintainAspectRatio: false,
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                     labels: {
+                        font: {
+                            family: "'Noto Sans KR', sans-serif",
+                        }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        title: tooltipTitleCallback
+                    },
+                    titleFont: {
+                        family: "'Noto Sans KR', sans-serif",
+                    },
+                    bodyFont: {
+                       font: {
+                            family: "'Noto Sans KR', sans-serif",
+                        }
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    ticks: {
+                        font: {
+                           family: "'Noto Sans KR', sans-serif",
+                        }
+                    }
+                },
+                y: {
+                     ticks: {
+                        font: {
+                           family: "'Noto Sans KR', sans-serif",
+                        }
+                    }
+                }
+            }
+        };
+
+        // Wrap chart initialization in DOMContentLoaded to ensure elements are loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            new Chart(document.getElementById('orthopedicMarketChart'), {
+                type: 'line',
+                data: {
+                    labels: ['2025년', '2026년', '2027년', '2028년', '2029년', '2030년'],
+                    datasets: [{
+                        label: '정형외과 의료기기 시장 규모 (백만 USD)',
+                        data: [216.02, 216.02 * 1.1076, 216.02 * (1.1076**2), 216.02 * (1.1076**3), 216.02 * (1.1076**4), 360.05],
+                        fill: true,
+                        backgroundColor: 'rgba(77, 157, 224, 0.2)',
+                        borderColor: brilliantBlues[2],
+                        tension: 0.4,
+                        pointBackgroundColor: brilliantBlues[0],
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: brilliantBlues[0]
+                    }]
+                },
+                options: {
+                    maintainAspectRatio: false,
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                            labels: {
+                                font: {
+                                    family: "'Noto Sans KR', sans-serif",
+                                }
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return context.dataset.label + ': $' + context.parsed.y.toFixed(2) + '백만';
+                                },
+                                 titleFont: {
+                                    family: "'Noto Sans KR', sans-serif",
+                                },
+                                bodyFont: {
+                                   family: "'Noto Sans KR', sans-serif",
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: '연도',
+                                font: {
+                                    family: "'Noto Sans KR', sans-serif",
+                                }
+                            },
+                            ticks: {
+                                font: {
+                                   family: "'Noto Sans KR', sans-serif",
+                                }
+                            }
+                        },
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: '시장 규모 (백만 USD)',
+                                font: {
+                                    family: "'Noto Sans KR', sans-serif",
+                                }
+                            },
+                            ticks: {
+                                font: {
+                                   family: "'Noto Sans KR', sans-serif",
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
